@@ -44,8 +44,7 @@ I built this during my 1st semester to practice form design, radio buttons, chec
 ## 📸 Preview  
 <img width="1919" height="869" alt="image" src="https://github.com/user-attachments/assets/ced8d934-c352-4a88-9371-bdca3373a014" />
 <br>
-<img width="1919" height="871" alt="image" src="https://github.com/user-attachments/assets/3045c2a5-6bc1-4e7a-9689-86d91a8ce2d3" />
-
+<img width="1919" height="667" alt="image" src="https://github.com/user-attachments/assets/0e9784e7-3ea4-441b-b587-0c42fe3b0f01" />
 
 
 ---
