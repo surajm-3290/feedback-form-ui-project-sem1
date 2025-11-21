@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-color: lightsteelblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            text-align: center;
+            background-color: rgb(82, 28, 152);
+            padding: 0.4%;
+            color: white;
+        }
+        section{
+            background-color: whitesmoke;
+            border: 2px solid rgb(82, 28, 152);
+            margin: 2% 6% 2% 6%;
+            border-radius: 8px;
+        }
+        h3,h4{
+           text-align: center;
+           color: rgb(108, 26, 215);
+           text-decoration: underline;
+        }
+        #info{
+            font-size: small;
+            color: grey;
+            margin: 1% 2%;
+        }
+        label{
+            font-weight: 540;
+            margin-left: 2%;
+            width: 93%;
+            
+        }
+        input[type=text]{
+            display: block;
+            margin-left: 2%;
+            width: 95.7%;
+            margin-bottom: 2%;
+            background-color: rgb(224, 234, 239);
+            border: 1px solid grey;
+        }
+        input[type=email]{
+            display: block;
+            margin-left: 2%;
+            width: 95.7%;
+            margin-bottom: 2%;
+            background-color: rgb(224, 234, 239);
+            border: 1px solid grey;
+        }
+        input[type=radio]{
+            margin-bottom: 2%;
+        }
+        input[type=checkbox]{
+            margin-bottom: 2%;
+        }
+        textarea{
+            display: block;
+            margin-left: 2%;
+            width: 95.7%;
+            margin-bottom: 3%;
+            height: 60px;
+            background-color: rgb(224, 234, 239);
+            
+        }
+
+        input[type=submit]{
+            margin-left: 43.5%;
+            background-color: rgb(70, 44, 164);
+            border-radius: 4px;
+            padding: 6px 16px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-small;
+            font-weight: bold;
+            margin-right: 2%;
+            
+        }
+
+        input[type=reset]{
+            background-color: grey;
+            color: white;
+            font-size: x-small;
+            font-style: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 6px 16px;
+            border-radius: 4px;
+            
+
+        }
+
+        table{
+            border: 1px solid rgb(82, 28, 152);
+            text-align: center;
+            width: 96%;
+            margin: 2%;
+            margin-right: 9%;
+        }
+        table th{
+            background-color: rgb(130, 133, 235);
+        }
+        tr:nth-child(even){background-color: rgb(182, 184, 236);}
+        .structuree{
+            border: 2px solid lightgrey;
+            margin: 2%;
+            margin-top: 0.5%;
+            border-radius: 4px;
+            background-color: rgb(224, 234, 239);
+            padding-top: 1%;
+        }
+        input[type=radio],input[type=checkbox]:hover{
+            transform: scale(1.2);
+            box-shadow: 0 0 4;
+        }
+        
+        
+        footer{
+            font-size: x-small;
+            text-align: center;
+            background-color:  rgb(70, 44, 164);
+            padding: 1%;
+            color: white;
+        }
+
+        #in{
+            display: block;
+            width: 95.7%;
+            margin-left: 2%;
+            height: 25px;
+            margin-bottom: 1%;
+        }
+
+        #in option:hover{
+            background-color: rgb(99, 136, 193);
+
+        }
+        tr:hover{
+            background-color:purple;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>FEEDBACK FORM</h2>
+    </nav>
+    <section>
+        <h3>We Value Your Feedback</h3>
+        <p id="info">Please fill out the form to share your experiance with our website
+            and servies. Your responses will help us improve our quality and 
+            user saticfation. 
+        </p>
+        <form>
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="Full_name" placeholder="Enter your name" required>
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="Email_Add" placeholder="Enter your email" required>
+            <label for="rate">Rate Our Servies:</label>
+            <div class="structuree">
+                <label for="excell"><input type="radio" id="excell" name="Rating">Excellent</label><br>
+                <label for="Good"><input type="radio" id="Good" name='Rating'>Good</label><br>
+                <label for="Avg"><input type="radio" id="Avg" name="Rating">Average</label><br>
+                <label for="poor"><input type="radio" id="poor" name="Rating">Poor</label>
+            </div>
+            <label>Preferred Contact Meathods:</label><br>
+            <div class="structuree">
+                <label for="mail"><input type="checkbox" id="mail" name="Email">Email</label><br>
+                <label for="phone"><input type="checkbox" id="phone" name="Phone">Phone</label><br>
+                <label for="chat"><input type="checkbox" id="chat" name="Chat">Chat</label>
+            </div>
+            <label for="in">Topic of Feedback</label>
+            <select id="in" name="Topic_feedback" title="Topic of Feedback" aria-label="Topic of Feedback">
+                <option  value="Web_Design" >Website Design</option>
+                <option  value="Service_Quality">Service Quality</option>
+                <option  value="Responce_Time">Responce Time</option>
+                <option value="General_Query">General Query</option>
+            </select>
+            <label type="comment">Your Comments</label>
+            <textarea id="comment" placeholder="Write your feedback here..."></textarea>
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET" >
+        </form>
+        <div>
+            <h4>Contact Information</h4>
+            <table>
+                <tr>
+                    <th>Department</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+                <tr>
+                    <td>Customer Support</td>
+                    <td type="email">support@example.com</td>
+                    <td>123-456-7890</td>
+                </tr>
+                <tr>
+                    <td>Technical Helpdesk</td>
+                    <td>hepldesk@example.com</td>
+                    <td>987-654-3210</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Feedback Form|Created using HTML and CSS</p>
+    </footer>
+</body>
+</html>
